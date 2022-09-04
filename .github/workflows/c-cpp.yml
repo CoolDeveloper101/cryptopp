@@ -15,5 +15,7 @@ jobs:
 
     steps:
     - uses: actions/checkout@v2
+    - name: Add msbuild to PATH
+      uses: microsoft/setup-msbuild@v1.1
     - name: msbuild cryptest.sln
       run:  MSBuild.exe cryptest.sln
