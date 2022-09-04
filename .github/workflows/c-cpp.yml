@@ -16,4 +16,4 @@ jobs:
     steps:
     - uses: actions/checkout@v2
     - name: msbuild cryptest.sln
-      run:  msbuild cryptest.sln
+      run:  MSBuild.exe cryptest.sln
